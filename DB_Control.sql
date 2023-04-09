@@ -1,0 +1,30 @@
+CREATE DATABASE Control_Empleados;
+
+USE control_empleados;
+
+CREATE TABLE EMPLEADOS (
+
+idempleado INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+cedula INT,
+hora_ingreso DATETIME,
+hora_salida DATETIME 
+);
+
+CREATE TABLE INVITADO (
+
+idinvitado INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+cedula INT,
+nombre VARCHAR(40)NOT NULL,
+hora_ingreso DATETIME,
+hora_salida DATETIME
+);
+
+
+CREATE TABLE PROVEEDOR (
+
+idproveedor INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+cedula INT,
+nombre VARCHAR(40)NOT NULL,
+hora_ingreso DATETIME,
+hora_salida DATETIME
+);
